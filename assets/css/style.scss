@@ -2,7 +2,19 @@
 ---
 
 @import "{{ site.theme }}";
+@import "dropdown.css";
 
-body {
-  background-color: lightblue;
+nav {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+.nav-links > * {
+  padding: 0 10px;
 }
