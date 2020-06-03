@@ -2,19 +2,87 @@
 ---
 
 @import "{{ site.theme }}";
-@import "dropdown.css";
+@import "./homepage.css";
+@import "./dropdown.css";
+
+body {
+  margin: 10px;
+  min-width: 660px;
+}
 
 nav {
-  text-transform: capitalize;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: black;
+}
+
+.page-header h2 {
+  color: black;
+}
+@media only screen and (min-width: 1300px) {
+  .page-header h1 {
+    color: black;
+  }
 }
 
 nav h1 {
   display: inline-block;
   margin: 0;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.nav-links {
+  padding-right: 15px;
 }
 
 .nav-links > * {
   padding: 0 10px;
+}
+
+// // index page
+.page-header {
+  background-image: url("/assets/img/poppies.jpg");
+  background-size: 100%;
+}
+
+.padding-vert {
+  padding: 10px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+article {
+  display: flex;
+  justify-content: space-around;
+}
+img {
+  max-width: 100%;
+}
+
+.services-content {
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.half-section {
+  display: inline-block;
+  width: 45%;
+  padding: 15px;
+}
+
+.third-section {
+  display: inline-block;
+  width: 29%;
+  padding: 15px;
 }
