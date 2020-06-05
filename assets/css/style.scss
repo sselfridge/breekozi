@@ -45,8 +45,14 @@ nav h1 {
   padding-right: 15px;
 }
 
-.nav-links > * {
-  padding: 0 10px;
+.nav-links a {
+  padding: 16px 16px;
+}
+
+.nav-links > a:hover {
+  color: white;
+  background-color: #a7a7a7;
+  text-decoration: none;
 }
 
 // // index page
