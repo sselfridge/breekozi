@@ -1,0 +1,12 @@
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#uscLogo {
+    width: 17%;
+}
+
+#harvardLogo {
+    width: 20%;
+}

@@ -2,8 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-@import "./mobile.css";
 @import "./dropdown.css";
+@import "./mobile.css";
 
 @media only screen and (min-aspect-ratio: 3/4) {
   #menuToggle {
@@ -15,11 +15,47 @@
   html {
     font-size: 16px;
   }
+  .page-header img {
+    display: none;
+  }
+  .page-header {
+    background-image: url("/assets/img/poppies.jpg");
+    background-size: 100%;
+  }
+
+  article:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .half-section {
+    display: inline-block;
+    width: 45%;
+    padding: 15px;
+  }
+
+  .half-section h3 {
+    margin-top: 0;
+  }
+
+  .third-section {
+    display: inline-block;
+    width: 29%;
+    padding: 15px;
+  }
 }
 
 body {
   margin: 10px;
-  min-width: 660px;
+  // min-width: 660px;
+  // @include large {
+  //   background-color: blue;
+  // }
+  // @include medium {
+  //   background-color: orange;
+  // }
+  // @include small {
+  //   background-color: red;
+  // }
 }
 
 nav {
@@ -40,6 +76,8 @@ nav {
 .page-header h2 {
   color: black;
 }
+
+// change text color of title for contrast
 @media only screen and (min-width: 1300px) {
   .page-header h1 {
     color: black;
@@ -55,22 +93,22 @@ nav h1 {
 
 .nav-links {
   padding-right: 15px;
+  @include small {
+    padding-right: 0;
+  }
 }
 
 .nav-links a {
   padding: 16px 16px;
+  @include small {
+    padding: 8px 16px;
+  }
 }
 
 .nav-links > a:hover {
   color: white;
   background-color: #a7a7a7;
   text-decoration: none;
-}
-
-// // index page
-.page-header {
-  background-image: url("/assets/img/poppies.jpg");
-  background-size: 100%;
 }
 
 .padding-vert {
@@ -91,16 +129,4 @@ img {
 .services-content {
   padding: 1em;
   margin: 0 auto;
-}
-
-.half-section {
-  display: inline-block;
-  width: 45%;
-  padding: 15px;
-}
-
-.third-section {
-  display: inline-block;
-  width: 29%;
-  padding: 15px;
 }

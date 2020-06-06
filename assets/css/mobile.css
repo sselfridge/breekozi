@@ -2,20 +2,35 @@
   nav {
     display: flex;
     flex-direction: column;
-    font-size: 1.75em;
+    font-size: 1.5em;
+  }
+  nav h1 {
+    font-size: 10vw;
+  }
+  nav ul {
+    /* list-style: none; */
+    margin: 0 50%;
   }
   .nav-links {
     max-height: 0;
     transition: max-height 0.15s ease-out;
     overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
   .nav-links a {
     display: block;
     width: 100%;
-    text-align: center;
+    /* text-align: left; */
   }
   .dropdown {
     width: 100%;
+  }
+  .dropdown-content {
+    position: relative;
+    display: block;
+    font-size: .75em;
+    width: 100%;
+    background-color: #e2e2e2;
   }
   .nav-links .dropbtn {
     font-size: 1em;
@@ -25,16 +40,16 @@
     display: block;
     background-color: #1e6bb8;
     width: 100%;
-    padding: 40px 0 0 45%;
-    height: 100px;
+    padding: 19px 0 0 46%;
+    height: 70px;
   }
   #menuCheck {
     display: block;
-    width: 150%;
-    height: 100px;
+    width: 100%;
+    height: 70px;
     position: absolute;
     left: 0px;
-    top: 100px;
+    top: 70px;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
@@ -72,6 +87,16 @@
   }
   #menuCheck:checked~#menuToggle>span:nth-last-child(2) {
     transform: rotate(-45deg) translate(-6px, 20px);
+  }
+  .half-section {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  article {
+    flex-direction: column;
+  }
+  article a {
+    font-size: 1.5em;
   }
   /* media query */
 }
