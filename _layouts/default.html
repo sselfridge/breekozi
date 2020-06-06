@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.5" />
     <title>Kozi Academy</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="/assets/js/index.js"></script>
@@ -12,13 +13,19 @@
       <a href="/">
         <h1>kozi academy</h1>
       </a>
+      <input id="menuCheck" type="checkbox" />
+      <div id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <span class="nav-links">
         <a href="/about/">about</a>
+        <!-- onmouseover="displayDrop('services','block')" -->
+        <!-- onmouseout="displayDrop('services','none')" -->
+        <!-- onclick="displayDrop('services','toggle')" -->
         <div class="dropdown">
-          <!-- onmouseover="displayDrop('services','block')" -->
-          <!-- onmouseout="displayDrop('services','none')" -->
-          <!-- onclick="displayDrop('services','toggle')" -->
-          <div class="dropbtn">services</div>
+          <a class="dropbtn">services</a>
           <div id="dropdown-services-content" class="dropdown-content">
             <a href="/services/tutoring">Academic Tutoring</a>
             <ul>

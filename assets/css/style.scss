@@ -2,8 +2,20 @@
 ---
 
 @import "{{ site.theme }}";
-@import "./homepage.css";
+@import "./mobile.css";
 @import "./dropdown.css";
+
+@media only screen and (min-aspect-ratio: 3/4) {
+  #menuToggle {
+    display: none;
+  }
+  #menuCheck {
+    display: none;
+  }
+  html {
+    font-size: 16px;
+  }
+}
 
 body {
   margin: 10px;

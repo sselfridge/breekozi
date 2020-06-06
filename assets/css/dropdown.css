@@ -3,7 +3,6 @@
     /* color: white; */
     color: #1e6bb8;
     padding: 16px;
-    font-size: 16px;
     border: none;
 }
 
@@ -52,8 +51,10 @@
     background-color: var(--hover-color);
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+@media only screen and (min-aspect-ratio: 3/4) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 }
 
 .dropdown:hover .dropbtn {

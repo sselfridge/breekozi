@@ -1,0 +1,77 @@
+@media only screen and (max-aspect-ratio: 3/4) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.75em;
+  }
+  .nav-links {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+  }
+  .nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .nav-links .dropbtn {
+    font-size: 1em;
+  }
+  /* Hamburger menu magic */
+  #menuToggle {
+    display: block;
+    background-color: #1e6bb8;
+    width: 100%;
+    padding: 40px 0 0 45%;
+    height: 100px;
+  }
+  #menuCheck {
+    display: block;
+    width: 150%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  #menuToggle span {
+    display: block;
+    width: 50px;
+    height: 8px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 0%;
+  }
+  #menuCheck:checked~.nav-links {
+    max-height: 1200px;
+    transition: max-height 0.25s ease-in;
+  }
+  #menuCheck:checked~#menuToggle>span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-30px, -7px);
+  }
+  #menuCheck:checked~#menuToggle>span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuCheck:checked~#menuToggle>span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(-6px, 20px);
+  }
+  /* media query */
+}
