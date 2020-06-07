@@ -1,0 +1,15 @@
+.author {
+    text-align: right;
+    margin-right: 5%;
+}
+
+.review {
+    padding: 5px;
+    margin: 20px 15%;
+    box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.review p {
+    margin-top: 0;
+    margin-bottom: 0;
+}

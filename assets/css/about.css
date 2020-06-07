@@ -10,3 +10,26 @@
 #harvardLogo {
     width: 20%;
 }
+
+@media only screen and (min-aspect-ratio: 3/4) {
+    #academic {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 3/4) {
+    .third-section img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        /* object-position: 0px -50px; */
+    }
+    #grad-cdm {
+        object-position: 0px -50px;
+    }
+    #grad-usc {
+        width: 85%;
+        margin: 0 5%;
+        object-position: 0px -15px;
+    }
+}
