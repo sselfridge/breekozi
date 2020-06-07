@@ -27,6 +27,10 @@
     flex-direction: row-reverse;
   }
 
+  article > div {
+    padding: 15px;
+  }
+
   .half-section {
     display: inline-block;
     width: 45%;
@@ -42,6 +46,15 @@
     width: 29%;
     padding: 15px;
   }
+}
+
+.single-section {
+  // padding: 15px;
+  width: 85%;
+}
+
+li {
+  margin-top: 8px;
 }
 
 body {
