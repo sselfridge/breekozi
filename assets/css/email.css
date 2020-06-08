@@ -1,0 +1,23 @@
+.copyIcon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+}
+
+.emailToolTip {
+    display: none;
+    font-size: .8em;
+    position: absolute;
+    background-color: lightgray;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.copyIcon:hover .emailToolTip {
+    display: block;
+}
+
+#emailText {
+    display: none;
+}
