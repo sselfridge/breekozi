@@ -33,6 +33,15 @@
     padding: 0;
 }
 
+.dropdown-content>a:first-child {
+    padding-bottom: 4px;
+}
+
+.dropdown-content li:first-child {
+    margin-top: 0px;
+    background-color: red;
+}
+
 .dropdown-content ul {
     margin: 0
 }
