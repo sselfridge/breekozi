@@ -5,8 +5,8 @@
 </head>
 
 <span>
-  <a href="mailto:KoziAcademy@gmail.com">Kozi.Academy@gmail.com</a>
-  <span class="copyIcon" data-clipboard-text="KoziAcademy@gmail.com">
+  <a href="mailto:{{ include.email }}">{{ include.email }}</a>
+  <span class="copyIcon" data-clipboard-text="{{ include.email }}">
     <img src="/assets/img/copy.svg" onclick="copyEmail()" />
     <span class="emailToolTip">Copy to Clipboard</span>
   </span>

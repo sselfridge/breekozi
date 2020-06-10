@@ -10,7 +10,7 @@ permalink: /about/
 <main>
   <article>
     <div class="half-section">
-      <img src="/assets/img/portrait.jpg" alt="" />
+      {% include img.html name="portrait" %}
     </div>
     <div class="half-section">
       <h3>Bree Koziara, Ed.M. Harvard University</h3>
@@ -30,7 +30,8 @@ permalink: /about/
   </article>
   <article id="academic">
     <div class="third-section">
-      <img id="grad-cdm" src="/assets/img/grad-cdm.jpg" alt="" />
+      {% include img.html name="grad-cdm" id="grad-cdm" %}
+
       <p>
         Born and raised in California, Bree began tutoring and mentoring in 2002 when she was only a
         freshman in high school. Growing up, she was a competitive dancer and MACY Award winning
@@ -40,7 +41,8 @@ permalink: /about/
       </p>
     </div>
     <div class="third-section">
-      <img id="grad-usc" src="/assets/img/grad-usc.jpg" alt="" />
+      {% include img.html name="grad-usc" id="grad-usc" %}
+
       <p>
         Bree is a proud member of the Trojan Family. In addition to going Greek and dancing on USC’s
         premier hip hop team, Break Through, Bree volunteered with USC’s Joint Education Program and
@@ -54,7 +56,8 @@ permalink: /about/
       </p>
     </div>
     <div class="third-section">
-      <img id="grad-har" src="/assets/img/grad-har.jpg" alt="" />
+      {% include img.html name="grad-har" id="grad-har" %}
+
       <p>
         Bree earned her Master’s in Higher Education from Harvard’s Graduate School of Education in
         2013. Bree married her passion for education and entrepreneurship by taking half of her
@@ -63,6 +66,31 @@ permalink: /about/
         experience, Bree's studies at Harvard and work as a career advisor at MIT provide her with
         the most current perspective on college admissions and student development.
       </p>
+    </div>
+  </article>
+  <article>
+    <div class="half-section">
+      <h3>
+        Michele Koziara
+      </h3>
+
+      <p>
+        With nearly twenty years of experience, Michele Koziara is the Math expert. She is
+        well-versed in both Traditional Math (Pre-Algebra, Geometry, Algebra-1, Algebra-2) and
+        Common Core Math (Math-7, Math-8, Math-1 & Math-1 Enhanced, Math-2 & Math 2-Enhanced,
+        Math-3). While many Math teachers know the subject matter, they can’t articulate their
+        thoughts and students are left struggling and frustrated. Mrs. K breaks down difficult
+        concepts and helps her students develop the foundational knowledge and skills they need to
+        succeed.
+      </p>
+
+      Beyond her expert instruction and warm personality, Michele also provides her students with
+      valuable resources with which to practice the concepts they’ll be tested on, helping to
+      eliminate test-day stress and anxiety. Please email Michele at {% include email.html
+      email="mkoziara1@gmail.com" %} with all math inquiries.
+    </div>
+    <div class="half-section">
+      {% include img.html name="michele" %}
     </div>
   </article>
 </main>

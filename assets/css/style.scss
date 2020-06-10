@@ -18,8 +18,17 @@
   .page-header img {
     display: none;
   }
-  .page-header {
+
+  .noWebp .page-header {
     background-image: url("/assets/img/poppies.jpg");
+  }
+
+  .webp .page-header {
+    background-image: url("/assets/img/dist/poppies/poppies_medium@2x.webp");
+  }
+
+  .page-header {
+    // background-image: url("/assets/img/poppies.jpg");
     background-size: 100%;
   }
 
@@ -45,6 +54,9 @@
     display: inline-block;
     width: 29%;
     padding: 15px;
+  }
+  .column-list {
+    column-count: 3;
   }
   //media query - desktop
 }
