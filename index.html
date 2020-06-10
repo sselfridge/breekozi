@@ -11,12 +11,8 @@ permalink: /
     Top athletes, actors, and business people have coaches who provide expert guidance and support
     to improve performace.
   </h2>
-  <picture>
-    <source srcset="/assets/img/dist/poppies/poppies_medium@2x.webp" type="image/webp" />
-    <source srcset="/assets/img/dist/poppies/poppies_medium.webp" type="image/webp" />
-    <!-- <source srcset="/assets/img/poppies/poppies_medium.jpg" type="image/jpeg" /> -->
-    <img src="/assets/img/poppies.jpg" alt="Alt Text!" />
-  </picture>
+  {% include img.html name="poppies" %}
+
   <h1>
     Do you have an academic mentor?
   </h1>
@@ -59,10 +55,14 @@ permalink: /
         Find out more about more about Bree and Michele’s academic services
       </a>
     </div>
-    <div class="half-section"><img src="/assets/img/tutoring.jpg" /></div>
+    <div class="half-section">
+      {% include img.html name="tutoring" %}
+    </div>
   </article>
   <article>
-    <div class="half-section"><img src="/assets/img/workshops.jpg" /></div>
+    <div class="half-section">
+      {% include img.html name="workshops" %}
+    </div>
     <div class="half-section">
       <h2>SKILL BUILDING WORKSHOPS</h2>
       <p>
@@ -91,7 +91,7 @@ permalink: /
       <a href="/services/counseling">Find out more about Bree’s College Counseling</a>
     </div>
     <div class="half-section">
-      <img src="/assets/img/counseling.jpg" />
+      {% include img.html name="counseling" %}
     </div>
   </article>
 </div>
