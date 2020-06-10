@@ -1,0 +1,23 @@
+<picture>
+  <!-- <source
+    srcset="/assets/img/dist/{{ include.name }}/{{ include.name }}_medium@2x.webp"
+    type="image/webp"
+  /> -->
+  <source
+    srcset="
+    /assets/img/dist/{{ include.name }}/{{ include.name }}_medium.webp 750w,
+    /assets/img/dist/{{ include.name }}/{{ include.name }}_medium@2x.webp 1500w,
+    "
+    type="image/webp"
+  />
+  <source
+    srcset="
+  /assets/img/{{ include.name }}/{{ include.name }}_medium.jpg 750w,
+  /assets/img/{{ include.name }}/{{ include.name }}_small.jpg 450w,
+  /assets/img/{{ include.name }}/{{ include.name }}_small@2x.jpg 900w,
+  /assets/img/{{ include.name }}/{{ include.name }}_small@3x.jpg 1350w,
+  "
+    type="image/jpeg"
+  />
+  <img id="{{ include.id }}" src="/assets/img/{{ include.name }}.jpg" alt="{{ include.alt }}" />
+</picture>
