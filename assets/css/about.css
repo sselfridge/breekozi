@@ -3,6 +3,10 @@
     justify-content: space-around;
 }
 
+.michele img {
+    margin: 0 20%;
+}
+
 #uscLogo {
     width: 17%;
 }
