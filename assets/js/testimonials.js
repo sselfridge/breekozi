@@ -24,7 +24,18 @@ function shuffle(array) {
 
 shuffle(testimonials);
 
-const topTen = testimonals.slice(0, 10);
+testimonials.sort((a, b) => {
+  console.log();
+  return b.priority - a.priority;
+});
+
+const topTen = testimonials.slice(0, 10);
+const remainder = testimonials.slice(10);
+
+const remainderLength = remainder.length;
+
+const testCount = document.getElementById("testCount");
+testCount.innerText = ` ${remainderLength} `;
 
 topTen.forEach((review) => {
   const element = document.createElement("div");
@@ -43,7 +54,7 @@ topTen.forEach((review) => {
 });
 
 function loadAll() {
-  testimonals.forEach((review) => {
+  remainder.forEach((review) => {
     const element = document.createElement("div");
     element.classList = "review";
     const text = document.createElement("p");
