@@ -22,6 +22,36 @@ function shuffle(array) {
   return array;
 }
 
+function displayReview(review, index, array) {
+  const element = document.createElement("div");
+  element.classList = "review";
+  const text = document.createElement("p");
+  text.innerText = review.text;
+  element.appendChild(text);
+
+  const author = document.createElement("p");
+  author.classList = "author";
+  author.innerText = "- ";
+  author.innerText += review.author === "" ? "anonymous" : review.author;
+  element.appendChild(author);
+
+  if (index === array.length - 1 && document.getElementById("endReview") === null) {
+    element.id = "endReview";
+  }
+
+  root.appendChild(element);
+}
+
+function loadAll() {
+  remainder.forEach(displayReview);
+  const endReview = document.getElementById("endReview");
+  if (endReview) {
+    endReview.scrollIntoView({ block: "center" });
+  }
+  const endBtn = document.getElementById("loadAllBtn");
+  endBtn.style.display = "none";
+}
+
 shuffle(testimonials);
 
 testimonials.sort((a, b) => {
@@ -37,36 +67,4 @@ const remainderLength = remainder.length;
 const testCount = document.getElementById("testCount");
 testCount.innerText = ` ${remainderLength} `;
 
-topTen.forEach((review) => {
-  const element = document.createElement("div");
-  element.classList = "review";
-  const text = document.createElement("p");
-  text.innerText = review.text;
-  element.appendChild(text);
-
-  const author = document.createElement("p");
-  author.classList = "author";
-  author.innerText = "- ";
-  author.innerText += review.author === "" ? "anonymous" : review.author;
-  element.appendChild(author);
-
-  root.appendChild(element);
-});
-
-function loadAll() {
-  remainder.forEach((review) => {
-    const element = document.createElement("div");
-    element.classList = "review";
-    const text = document.createElement("p");
-    text.innerText = review.text;
-    element.appendChild(text);
-
-    const author = document.createElement("p");
-    author.classList = "author";
-    author.innerText = "- ";
-    author.innerText += review.author === "" ? "anonymous" : review.author;
-    element.appendChild(author);
-
-    root.appendChild(element);
-  });
-}
+topTen.forEach(displayReview);
