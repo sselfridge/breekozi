@@ -71,7 +71,7 @@ li {
 }
 
 body {
-  margin: 10px;
+  margin: 10px 10px 0px 10px;
   // min-width: 660px;
   // @include large {
   //   background-color: blue;
@@ -186,4 +186,13 @@ img {
 .center-content {
   display: flex;
   justify-content: space-around;
+}
+
+.site-footer {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-footer > span {
 }
